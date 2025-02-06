@@ -12,12 +12,12 @@ const Navbar = () => {
             <div className="w-60">
               <img
                 src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-primary.svg"
-                alt="logo"
+                alt=""
                 className="dark:hidden"
               />
               <img
                 src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
-                alt="logo"
+                alt=""
                 className="hidden dark:block"
               />
             </div>
@@ -40,9 +40,6 @@ const Navbar = () => {
                 >
                   <ul className="block md:flex md:gap-6">
                     <li className="py-4 md:py-2">
-                      <button className="text-white font-bold">MENU</button>
-                    </li>
-                    <li className="py-4 md:py-2">
                       <button className="text-white font-bold">SERVICES</button>
                     </li>
                     <li className="py-4 md:py-2">
@@ -56,7 +53,7 @@ const Navbar = () => {
                   SIGN IN
                 </button>
                 <button className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white hover:bg-primary/90">
-                  SIGN OUT
+                  SIGN UP
                 </button>
               </div>
             </div>
