@@ -1,8 +1,13 @@
 import React from "react";
+// image component
+import image0 from "../../assets/images/356202168_1515581109215839_7191836832866658358_n.jpg";
+import Services from "../sercices/Services";
+import Contact from "../contact/Contact";
+// end of images
 React;
 export default function Home() {
   return (
-    <div className="w-full ">
+    <div className="w-full sm:w-full md:w-full lg:w-full xl:w-full">
       {/* main container */}
       <section className="w-full pb-12 sm:pb-16 lg:pt-8">
         <div className="px-4 mx-auto w-full sm:px-6 lg:px-8">
@@ -102,14 +107,21 @@ export default function Home() {
             </div>
             <div>
               <img
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto"
-                src="https://d33wubrfki0l68.cloudfront.net/d6f1462500f7670e0db6b76b35054a081679a5a0/0ce15/images/hero/5.1/illustration.png"
-                alt="Illustration"
+                className="w-full rounded-2xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto"
+                src={image0}
+                alt=""
               />
             </div>
           </div>
         </div>
       </section>
+      {/*  */}
+      <div className="w-full">
+        <Services />
+      </div>
+      <div className="w-full">
+        <Contact/>
+      </div>
     </div>
   );
 }

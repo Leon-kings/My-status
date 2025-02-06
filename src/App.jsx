@@ -14,27 +14,25 @@ const App = () => {
 
   return (
     <>
-      <div className="w-full  h-screen">
+      <div className="w-full min-h-screen">
         {!videoEnded ? (
           <video
             autoPlay
             muted
-            className="w-full h-full md:w-full sm:w-full lg:w-full object-cover bg-amber-100"
+            className="absolute inset-0 w-full h-full object-cover"
             onEnded={() => setVideoEnded(true)}
           >
             <source src={Opening} type="video/mp4" />
           </video>
         ) : (
-          <>
-            <main className="w-full md:w-full sm:w-full lg:w-full bg-white">
+          <main className="w-full min-h-screen bg-white flex flex-col">
             <BrowserRouter>
-              <Navbar/>
-                <Routes>
-                  <Route path="/" element={<Home />} />
+              <Navbar />
+              <Routes>
+                <Route path="/" element={<Home />} />
               </Routes>
             </BrowserRouter>
-            </main>
-          </>
+          </main>
         )}
       </div>
     </>
