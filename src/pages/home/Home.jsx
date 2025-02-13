@@ -3,8 +3,9 @@ import React, { useEffect, useState } from "react";
 
 import Services from "../sercices/Services";
 import Contact from "../contact/Contact";
-import IT from "../skillsets/Skill-set";
+// import IT from "../skillsets/Skill-set";
 import Hero from "../head/Heading";
+import Blog from "../skillsets/Potfolio";
 // end of images
 
 React;
@@ -37,13 +38,11 @@ export default function Home() {
         <div className="w-full p-4">
           <Hero/>
         </div>
-        
-        <div className="w-full">
-          <IT />
-        </div>
-        {/*  */}
         <div className="w-full">
           <Services />
+        </div>
+        <div className="w-full">
+          <Blog/>
         </div>
         <div className="w-full">
           <Contact />
