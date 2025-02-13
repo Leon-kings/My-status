@@ -1,21 +1,18 @@
 import React, { useState } from "react";
-import { BiMenu } from "react-icons/bi";
+import { BiLogIn, BiMenu, BiRegistered } from "react-icons/bi";
 React;
-import logo from '../../assets/images/Black and Red Y2k Modern Professional Fashion Logo.png'
+import logo from "../../assets/images/Black and Red Y2k Modern Professional Fashion Logo.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      <header className="flex w-full items-center bg-black text-white dark:bg-dark">
+      <header className="flex bg-black w-full items-center ">
         <div className="w-full pt-4 px-4 md:px-6 lg:px-8">
           <div className="relative flex items-center justify-between">
             <div className="w-40 h-30 object-center">
-              <img
-                src={logo}
-                alt=""
-                className="dark:hidden object-cover"
-              />
+              <img src={logo} alt="" className="dark:hidden object-cover" />
               <img
                 src={logo}
                 alt=""
@@ -39,26 +36,40 @@ const Navbar = () => {
                     !open ? "hidden" : ""
                   }`}
                 >
-                  <ul className="block md:flex md:gap-6">
+                  <ul className="block md:flex md:gap-6 dark:bg-white opacity-100 dark:text-white">
                     <li className="py-4 md:py-2">
-                      <button className="text-white font-bold">SERVICES</button>
+                      <Link to={"/7493097"}>
+                        <button className="text-white font-bold">
+                          SERVICES
+                        </button>
+                      </Link>
                     </li>
                     <li className="py-4 md:py-2">
-                      <button className="text-white font-bold">ABOUT</button>
+                      <Link to={"/8340u20u"}>
+                        <button className="text-white font-bold">ABOUT</button>
+                      </Link>
                     </li>
                     <li className="py-4 md:py-2 lg:hidden md:hidden">
-                      <button className="text-white font-bold">SIGN IN</button>
+                      <Link to={"/Login"}>
+                        <button className="text-white font-bold">
+                          SIGN IN
+                        </button>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
               </div>
               <div className="hidden justify-end pr-16 gap-4 sm:flex lg:pr-0">
-                <button className="px-7 py-3 text-base font-medium text-white hover:text-primary dark:text-white">
-                  SIGN IN
-                </button>
-                <button className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white hover:bg-primary/90">
-                  SIGN UP
-                </button>
+                <Link to={"/Login"}>
+                  <button className="px-7 py-3 text-base font-medium text-white hover:text-primary dark:text-white">
+                    <BiLogIn className="size-6" />
+                  </button>
+                </Link>
+                <Link to={"/register"}>
+                  <button className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white hover:bg-primary/90">
+                    <BiRegistered className="size-6" />
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

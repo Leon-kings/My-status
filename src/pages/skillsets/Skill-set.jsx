@@ -5,7 +5,7 @@ export default function IT() {
   return (
     <>
       <br />
-      <div className="bg-gray-50 py-24 sm:py-32">
+      <div className="bg-gray-50 py-24 sm:py-32 bg-">
         <div className="mx-auto w-full px-6 lg:w-full xl:w-full xl:px-8 lg:px-8">
           <h2 className="text-blue-400 font-bold text-center py-4">SKILLS</h2>
           <p className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">

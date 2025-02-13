@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 // image component
-import image0 from "../../assets/images/356202168_1515581109215839_7191836832866658358_n.jpg";
-import image1 from "../../assets/images/Screenshot.png";
-import image2 from "../../assets/images/Screenshot1.png";
+
 import Services from "../sercices/Services";
 import Contact from "../contact/Contact";
 import IT from "../skillsets/Skill-set";
@@ -34,7 +32,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="w-full bg-black text-white sm:w-full md:w-full lg:w-full xl:w-full rounded shadow-md">
+      <div className="w-full bg-black sm:w-full md:w-full lg:w-full xl:w-full rounded shadow-md">
         {/* main container */}
         <div className="w-full p-4">
           <Hero/>

@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Opening from "./assets/video//opening.mp4";
 import Navbar from "./components/nav/Navbar";
+import Register from "./pages/form/register/Register";
+import Login from "./pages/form/login/Login";
 React;
 const App = () => {
   const [videoEnded, setVideoEnded] = useState(false);
@@ -30,6 +32,8 @@ const App = () => {
               <Navbar />
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/Register" element={<Register />} />
+                <Route path="/Login" element={<Login />} />
               </Routes>
             </BrowserRouter>
           </main>

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-React;
+React;import image from '../../assets/images/images.png'
+import image1 from '../../assets/images/nodejs-icon-2048x2048-rueyo8fw.png'
+import image2 from '../../assets/images/images1.png'
 const Hero = () => {
   return (
     <>
-      <div className="w-full relative bg-black text-white pb-[110px] pt-[120px] dark:bg-dark lg:pt-[150px]">
+      <div className="w-full relative text-white pb-[110px] pt-[120px] dark:bg-dark lg:pt-[150px]">
         <div className="w-full">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-5/12">
@@ -26,17 +28,17 @@ const Hero = () => {
                   <div className="flex items-center space-x-4">
                     <SingleImage
                       href="#"
-                      imgSrc="https://cdn.tailgrids.com/2.0/image/assets/images/brands/ayroui.svg"
+                      imgSrc={image}
                     />
 
                     <SingleImage
                       href="#"
-                      imgSrc="https://cdn.tailgrids.com/2.0/image/assets/images/brands/graygrids.svg"
+                      imgSrc={image1}
                     />
 
                     <SingleImage
                       href="#"
-                      imgSrc="https://cdn.tailgrids.com/2.0/image/assets/images/brands/uideck.svg"
+                      imgSrc={image2}
                     />
                   </div>
                 </div>
@@ -116,7 +118,7 @@ const Navbar = () => {
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
           <div className="w-60 max-w-full px-4">
-            <a href="/#" className="block w-full py-5">
+            
               <img
                 src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
                 alt="logo"
@@ -127,7 +129,7 @@ const Navbar = () => {
                 alt="logo"
                 className="w-full hidden dark:block"
               />
-            </a>
+           
           </div>
           <div className="flex w-full items-center justify-between px-4">
             <div>
