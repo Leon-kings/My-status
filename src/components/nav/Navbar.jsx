@@ -60,7 +60,7 @@ const Navbar = () => {
                 </nav>
               </div>
               <div className="hidden justify-end pr-16 gap-4 sm:flex lg:pr-0">
-                <Link to={"/Login"}>
+                <Link to={"/register"}>
                   <button className="px-7 py-3 text-base font-medium text-white hover:text-primary dark:text-white">
                     <BiLogIn className="size-6" />
                   </button>

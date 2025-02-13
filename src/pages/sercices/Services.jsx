@@ -7,7 +7,7 @@ export default function Services() {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold leading-tight text-whitesm:text-4xl xl:text-5xl font-pj">
-              SKills
+              SERVICES
             </h2>
             <p className="mt-4 text-base leading-7 text-gray-600 sm:mt-8 font-pj">
               Here are some Skills we ca serve it through.

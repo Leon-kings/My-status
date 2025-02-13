@@ -9,9 +9,9 @@ const Contact = () => {
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12 rounded shadow-md">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <span className="mb-4 block text-base font-semibold text-primary">
+                <h2 className="mb-4 block text-base font-semibold text-primary">
                   Contact Us
-                </span>
+                </h2>
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
@@ -40,7 +40,7 @@ const Contact = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                    Kigali City, Kigali
                     </p>
                   </div>
                 </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      (+62)81 414 257 9980
+                      (+250) 7879 445 77
                     </p>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                      leonakingeneye2002@gmail.com
                     </p>
                   </div>
                 </div>
