@@ -36,7 +36,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                       Our Location
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color text-green-200 dark:text-dark-6">
                       Kigali City, Kigali
                     </p>
                   </div>
@@ -76,7 +76,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color text-green-200 dark:text-dark-6">
                       (+250) 7879 445 77
                     </p>
                   </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                       Email Address
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color text-green-200 dark:text-dark-6">
                       leonakingeneye2002@gmail.com
                     </p>
                   </div>
