@@ -3,7 +3,7 @@ import FormInput from "../action/FormInput";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 React;
-const Register = () => {
+const Messsages = () => {
   const [values, setValues] = useState({
     email: "",
     message: "",
@@ -34,12 +34,9 @@ const Register = () => {
     e.preventDefault();
     console.log(values);
     try {
-      await axios.post("https://shopsnodejs.onrender.com/users", values);
-      if (window.confirm("Do you really want to continue to login?")) {
-        Navigate("/login");
-      } else {
-        Navigate("/");
-      }
+      await axios.post("https://shopsnodejs.onrender.com/message-me", values);
+
+      Navigate("/login");
     } catch (err) {
       console.log(err);
     }
@@ -50,14 +47,14 @@ const Register = () => {
   };
   return (
     <>
-      <div className="w-full xl:w-full lg:w-full md:w-full sm:w-full flex justify-center  bg-gray-100">
+      <div className="w-full xl:w-full lg:w-full p-4 md:w-full sm:w-full flex text-gray-700 justify-center">
         <div className="w-full max-w-md p-8 bg-white rounded shadow-md">
-          <div className="Register">
+          <div className="Messsages w-full">
             <form onSubmit={handleSubmit}>
               <div className="head">
                 <h2 className="text-blue-400 font-bold py-4"> MESSAGE ME</h2>
               </div>
-              <div className="contain">
+              <div className="w-full">
                 {inputs.map((input) => (
                   <FormInput
                     key={input.id}
@@ -79,4 +76,4 @@ const Register = () => {
     </>
   );
 };
-export default Register;
+export default Messsages;

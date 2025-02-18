@@ -3,8 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Opening from "./assets/video//opening.mp4";
 import Navbar from "./components/nav/Navbar";
-import Register from "./pages/form/register/Register";
-import Login from "./pages/form/login/Login";
+import Services from "./pages/sercices/Services";
+import Contact from "./pages/contact/Contact";
+import Message from "./pages/form/msg/Message";
 React;
 const App = () => {
   const [videoEnded, setVideoEnded] = useState(false);
@@ -32,8 +33,10 @@ const App = () => {
               <Navbar />
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/Register" element={<Register />} />
-                <Route path="/Login" element={<Login />} />
+                <Route path="/84930/84390" element={<Message />} />
+                <Route path="/7493097" element={<Services />} />
+                <Route path="/8340u20u" element={<Contact />} />
+                
               </Routes>
             </BrowserRouter>
           </main>

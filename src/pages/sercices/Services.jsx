@@ -9,8 +9,8 @@ export default function Services() {
             <h2 className="text-3xl font-bold leading-tight text-whitesm:text-4xl xl:text-5xl font-pj">
               SERVICES
             </h2>
-            <p className="mt-4 text-base leading-7 text-gray-600 sm:mt-8 font-pj">
-              Here are some Skills we ca serve it through.
+            <p className="mt-4 text-base leading-7 text-white sm:mt-8 font-pj">
+              Here are some Skills we can serve it through . Managed, secure & optimized for your applications.
             </p>
           </div>
 

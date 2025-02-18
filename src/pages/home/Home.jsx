@@ -44,7 +44,7 @@ export default function Home() {
         <div className="w-full">
           <Blog/>
         </div>
-        <div className="w-full">
+        <div className="w-full lg:w-full">
           <Contact />
         </div>
         {/* nice flowback */}

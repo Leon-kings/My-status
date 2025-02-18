@@ -1,8 +1,9 @@
 import React from "react";
-React;import image from '../../assets/images/images.png'
-import image1 from '../../assets/images/nodejs-icon-2048x2048-rueyo8fw.png'
-import image2 from '../../assets/images/images1.png'
-import me from '../../assets/images/356202168_1515581109215839_7191836832866658358_n.jpg'
+React;
+import image from "../../assets/images/images.png";
+import image1 from "../../assets/images/nodejs-icon-2048x2048-rueyo8fw.png";
+import image2 from "../../assets/images/images1.png";
+import me from "../../assets/images/356202168_1515581109215839_7191836832866658358_n.jpg";
 const Hero = () => {
   return (
     <>
@@ -19,41 +20,37 @@ const Hero = () => {
                   implementing a software solution to satisfy a user. The
                   process is more encompassing than programming, writing code.
                 </p>
-                <ul className="flex flex-wrap items-center">
-              
-                  
-                </ul>
+                <ul className="flex flex-wrap items-center"></ul>
                 <div className="clients pt-16">
-               
-
                   <div className="flex items-center space-x-4">
-                    <SingleImage
-                      href="#"
-                      imgSrc={image}
-                    />
+                    <SingleImage imgSrc={image} />
 
-                    <SingleImage
-                      href="#"
-                      imgSrc={image1}
-                    />
+                    <SingleImage imgSrc={image1} />
 
-                    <SingleImage
-                      href="#"
-                      imgSrc={image2}
-                    />
+                    <SingleImage imgSrc={image2} />
+
+                    <SingleImage imgSrc={image2} />
                   </div>
+                </div>
+                <div className="w-full pt-12">
+                  <h2 className="mainphoto text-white">Main Languages :</h2>
+                  <ul className="new pt-8">
+                    <li className="text-blue-400 font-bold">Js</li>
+                    <li className="text-blue-400 font-bold">PHP</li>
+                  </ul>
+                  <h2 className="mainphoto pt-8 text-white">Responsiveness :</h2>
+                  <ul className="new pt-4">
+                    <li className="text-blue-400 font-bold">Tailwinds css</li>
+                    <li className="text-blue-400 font-bold">Post css</li>
+                  </ul>
                 </div>
               </div>
             </div>
             <div className="hidden px-4 lg:block lg:w-1/12"></div>
             <div className="w-full px-4 lg:w-6/12">
               <div className="lg:ml-auto lg:text-right">
-                <div className="relative z-10 inline-block pt-11 lg:pt-0">
-                  <img
-                    src={me}
-                    alt=""
-                    className="w-full h-[500px] lg:ml-auto"
-                  />
+                <div className="relative z-10 inline-block  lg:pt-0">
+                  <img src={me} alt="" className="w-full lg:ml-auto rounded-2xl shadow-2xl" />
                   <span className="absolute -bottom-8 -left-8 z-[-1]">
                     <svg
                       width="93"
@@ -101,14 +98,12 @@ const Hero = () => {
 
 export default Hero;
 
-const SingleImage = ({ href, imgSrc }) => {
+const SingleImage = ({ imgSrc }) => {
   return (
     <>
-      <a href={href} className="flex w-full items-center justify-center">
-        <img src={imgSrc} alt="brand image" className="h-15 w-full" />
-      </a>
+      <div className="flex w-full items-center justify-center">
+        <img src={imgSrc} alt="" className="h-20 w-20" />
+      </div>
     </>
   );
 };
-
-
