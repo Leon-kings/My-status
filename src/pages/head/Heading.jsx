@@ -3,6 +3,7 @@ React;
 import image from "../../assets/images/images.png";
 import image1 from "../../assets/images/nodejs-icon-2048x2048-rueyo8fw.png";
 import image2 from "../../assets/images/images1.png";
+// import image3 from '../../assets/images/what-is-java-image.png'
 import me from "../../assets/images/356202168_1515581109215839_7191836832866658358_n.jpg";
 const Hero = () => {
   return (
@@ -22,14 +23,14 @@ const Hero = () => {
                 </p>
                 <ul className="flex flex-wrap items-center"></ul>
                 <div className="clients pt-16">
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center rounded-2xl space-x-4">
                     <SingleImage imgSrc={image} />
 
                     <SingleImage imgSrc={image1} />
 
                     <SingleImage imgSrc={image2} />
 
-                    <SingleImage imgSrc={image2} />
+                    {/* <SingleImage imgSrc={image3} /> */}
                   </div>
                 </div>
                 <div className="w-full pt-12">
@@ -102,7 +103,7 @@ const SingleImage = ({ imgSrc }) => {
   return (
     <>
       <div className="flex w-full items-center justify-center">
-        <img src={imgSrc} alt="" className="h-20 w-20" />
+        <img src={imgSrc} alt="" className="h-20 w-20 rounded-2xl" />
       </div>
     </>
   );
