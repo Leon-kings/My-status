@@ -35,7 +35,7 @@ export default function Home() {
     <>
       <div className="w-full bg-black sm:w-full md:w-full lg:w-full xl:w-full rounded shadow-md">
         {/* main container */}
-        <div className="w-full p-4">
+        <div className="w-full">
           <Hero/>
         </div>
         <div className="w-full">
