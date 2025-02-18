@@ -17,7 +17,7 @@ const Navbar = () => {
                 className="hidden dark:block object-cover"
               />
             </div>
-            <div className="flex w-full items-center justify-between">
+            <div className="flex w-full right-0 justify-end items-center ">
               <div className=" justify-end pr-16 gap-4 sm:flex lg:pr-0">
                 <Link to={"/84930/84390"}>
                   <button className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white hover:bg-primary/90">
