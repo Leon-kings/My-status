@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <header className="w-full sm:w-full lg:w-full xl:w-full flex bg-black items-center ">
+      <header className="w-full flex bg-black items-center ">
         <div className="w-full pt-4 px-4 md:px-6 lg:px-8">
           <div className="relative flex items-center justify-between">
             <div className="w-40 h-30 object-center">

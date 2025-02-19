@@ -8,7 +8,7 @@ React;
 const Blog = () => {
   return (
     <>
-      <section className="w-full bg-black p-4 text-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+      <section className="w-full bg-black px-4 text-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
         <div className="w-full">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
@@ -28,7 +28,7 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="-mx-4 flex flex-wrap">
+          <div className="-mx-4 flex w-full flex-wrap">
             <BlogCard
               CardTitle="COMPUTERS STORE"
               CardDescription="LD Computer Store Rwanda Limited is a Full-Service Technology Services Provider also called the Top IT Consulting Company in Kigali, Rwanda."
@@ -74,7 +74,7 @@ const BlogCard = ({ image, CardTitle, link, name, CardDescription }) => {
           <div className="mb-8 overflow-hidden rounded">
             <img src={image} alt="" className="w-full" />
           </div>
-          <div>
+          <div className="w-full">
             <Link to={link}>
               <button className="text-center bg-amber-100 block">{name}</button>
             </Link>

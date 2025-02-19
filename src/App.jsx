@@ -28,7 +28,7 @@ const App = () => {
             <source src={Opening} type="video/mp4" />
           </video>
         ) : (
-          <main className="w-full min-h-screen bg-white flex flex-col">
+          <main className="w-full min-h-screen bg-white">
             <BrowserRouter>
               <Navbar />
               <Routes>

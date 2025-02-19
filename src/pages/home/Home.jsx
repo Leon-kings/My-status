@@ -35,16 +35,16 @@ export default function Home() {
     <>
       <div className="w-full bg-black sm:w-full md:w-full lg:w-full xl:w-full rounded shadow-md">
         {/* main container */}
-        <div className="w-full">
+        <div className="part">
           <Hero/>
         </div>
-        <div className="w-full">
+        <div className="part">
           <Services />
         </div>
-        <div className="w-full">
+        <div className="part">
           <Blog/>
         </div>
-        <div className="w-full lg:w-full">
+        <div className="part">
           <Contact />
         </div>
         {/* nice flowback */}
