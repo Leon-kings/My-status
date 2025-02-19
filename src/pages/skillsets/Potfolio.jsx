@@ -28,7 +28,7 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="-mx-4 flex w-full flex-wrap">
+          <div className="flex w-full flex-wrap">
             <BlogCard
               CardTitle="COMPUTERS STORE"
               CardDescription="LD Computer Store Rwanda Limited is a Full-Service Technology Services Provider also called the Top IT Consulting Company in Kigali, Rwanda."
