@@ -10,7 +10,7 @@ const Blog = () => {
     <>
       <section className="w-full bg-black px-4 text-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
         <div className="w-full">
-          <div className="-mx-4 flex flex-wrap">
+          <div className=" flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
                 <h2 className="mb-2 block text-lg font-semibold text-primary">

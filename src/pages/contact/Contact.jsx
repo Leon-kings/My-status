@@ -5,8 +5,17 @@ const Contact = () => {
   return (
     <>
       <section className="w-full p-4 relative  sm:w-full lg:w-full xl:w-full overflow-hidden bg-black text-white py-20 dark:bg-dark lg:py-[120px]">
+        <div className="text-center pt-4 pb-8">
+          <h2 className="text-3xl font-bold leading-tight text-whitesm:text-4xl xl:text-5xl font-pj">
+            CONTACTS
+          </h2>
+          <p className="mt-4 text-base leading-7 text-white sm:mt-8 font-pj">
+            Here are some Skills we can serve it through . Managed, secure &
+            optimized for your applications.
+          </p>
+        </div>
         <div className="w-full sm:w-full lg:w-full xl:w-full">
-          <div className="-mx-4 flex flex-wrap lg:justify-between">
+          <div className="flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12 rounded shadow-md">
               <div className="mb-12 max-w-[570px] lg:mb-0">
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
