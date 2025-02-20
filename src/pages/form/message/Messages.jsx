@@ -13,9 +13,9 @@ const Messsages = () => {
       id: 1,
       name: "email",
       type: "email",
-      placeholder: "email",
+      placeholder: "Email",
       errorMessage: "email should be valid and should incloude @ symbols",
-      label: "email",
+      label: "Email",
       required: true,
     },
     {
