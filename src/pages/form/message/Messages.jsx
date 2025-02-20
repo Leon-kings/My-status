@@ -47,7 +47,7 @@ const Messsages = () => {
   };
   return (
     <>
-      <div className="w-full xl:w-full items-center justify-items-center p-4 md:w-full sm:w-full flex text-gray-800 justify-center">
+      <div className="w-full xl:w-full items-center p-4 md:w-full sm:w-full flex text-gray-800 justify-center">
         <div className="w-full p-8 bg-white rounded shadow-2xl">
           <div className="Messsages w-full">
             <form onSubmit={handleSubmit}>
