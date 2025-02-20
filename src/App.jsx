@@ -6,6 +6,7 @@ import Navbar from "./components/nav/Navbar";
 import Services from "./pages/sercices/Services";
 import Contact from "./pages/contact/Contact";
 import Message from "./pages/form/msg/Message";
+import Messsages from "./pages/form/message/Messages";
 React;
 const App = () => {
   const [videoEnded, setVideoEnded] = useState(false);
@@ -34,6 +35,7 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/84930/84390" element={<Message />} />
+                <Route path="/84930/84398" element={<Messsages />} />
                 <Route path="/7493097" element={<Services />} />
                 <Route path="/8340u20u" element={<Contact />} />
                 

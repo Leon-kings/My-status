@@ -47,8 +47,8 @@ const Messsages = () => {
   };
   return (
     <>
-      <div className="w-full xl:w-full lg:w-full p-4 md:w-full sm:w-full flex text-gray-800 justify-center">
-        <div className="w-full p-8 bg-white rounded shadow-md">
+      <div className="w-full xl:w-full items-center justify-items-center p-4 md:w-full sm:w-full flex text-gray-800 justify-center">
+        <div className="w-full p-8 bg-white rounded shadow-2xl">
           <div className="Messsages w-full">
             <form onSubmit={handleSubmit}>
               <div className="head">
@@ -67,7 +67,7 @@ const Messsages = () => {
                 <div className="head">
                   <button className="btn w-44 text-white">Send</button>
                 </div>
-                <p className="text-black p-4">
+                <p className="text-black p-4 max-w-[500px]">
                   The Contact Us component is a form that collects information
                   from your visitors and enables them to contact you.
                 </p>
