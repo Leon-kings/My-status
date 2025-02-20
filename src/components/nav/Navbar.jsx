@@ -1,5 +1,5 @@
 import React from "react";
-import { BiRegistered } from "react-icons/bi";
+import { BiHome, BiRegistered } from "react-icons/bi";
 React;
 import logo from "../../assets/images/Black and Red Y2k Modern Professional Fashion Logo.png";
 import { Link } from "react-router-dom";
@@ -18,7 +18,12 @@ const Navbar = () => {
               />
             </div>
             <div className="flex w-full right-0 justify-end items-center ">
-              <div className=" justify-end pr-16 gap-4 sm:flex lg:pr-0">
+              <div className=" justify-end pr-16 gap-8 sm:flex lg:pr-0">
+                <Link to={"/"} className="">
+                  <button className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white hover:bg-primary/90">
+                    <BiHome className="size-6" />
+                  </button>
+                </Link>
                 <Link to={"/84930/84390"}>
                   <button className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white hover:bg-primary/90">
                     <BiRegistered className="size-6" />

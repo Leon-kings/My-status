@@ -4,7 +4,7 @@ React;
 const Contact = () => {
   return (
     <>
-      <section className="w-full p-4 relative  sm:w-full lg:w-full xl:w-full overflow-hidden bg-black text-white py-20 dark:bg-dark lg:py-[120px]">
+      <section className="w-full relative  sm:w-full lg:w-full xl:w-full overflow-hidden bg-black text-white py-20 dark:bg-dark lg:py-[120px]">
         <div className="text-center pt-4 pb-8">
           <h2 className="text-3xl font-bold leading-tight text-whitesm:text-4xl xl:text-5xl font-pj">
             CONTACTS
@@ -118,7 +118,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="w-full p-4 lg:w-1/2 xl:w-5/12">
-              <div className="w-full xl:w-full relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 ">
+              <div className="w-full xl:w-full relative rounded-lg bg-white shadow-lg dark:bg-dark-2 ">
                 <Messsages />
               </div>
             </div>
