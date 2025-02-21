@@ -8,10 +8,10 @@ const Hero = () => {
   return (
     <>
       <div className="w-full relative text-white pb-[110px] pt-[120px] dark:bg-dark lg:pt-[150px]">
-        <div className="contain">
+        <div className="w-full">
           <div className="flex flex-wrap">
-            <div className="w-full px-4 lg:w-5/12">
-              <div className="hero-content px-12">
+            <div className="w-full px-6 lg:w-5/12">
+              <div className="hero-content ">
                 <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
                   Am Software Developer
                 </h1>
@@ -30,7 +30,7 @@ const Hero = () => {
                     <SingleImage imgSrc={image2} />
                   </div>
                 </div>
-                <div className="w-full pt-12">
+                <div className="w-full px-5 pt-12">
                   <h2 className="mainphoto text-white">Main Languages :</h2>
                   <ul className="new pt-8">
                     <li className="text-blue-400 font-bold">Js</li>
