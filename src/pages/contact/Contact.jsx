@@ -117,7 +117,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full relative rounded-lg bg-white shadow-lg lg:w-1/2 xl:w-5/12">
+            <div className="w-full relative rounded-lg bg-white shadow-lg sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-5/12">
               <div className="w-full text-black ">
                 <Messsages />
               </div>
