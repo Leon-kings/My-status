@@ -4,7 +4,7 @@ React;
 const Contact = () => {
   return (
     <>
-      <section className="w-full relative text-white sm:w-full lg:w-full xl:w-full overflow-hidden bg-black">
+      <section className="w-full relative text-white xl:w-full overflow-hidden bg-black">
         <div className="text-center pt-4 pb-8">
           <h2 className="text-3xl font-bold leading-tight text-whitesm:text-4xl xl:text-5xl font-pj">
             CONTACTS
