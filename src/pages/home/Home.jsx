@@ -33,7 +33,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="w-full bg-black sm:w-full md:w-full lg:w-full xl:w-full rounded shadow-md">
+      <div className="w-full bg-black rounded shadow-md">
         {/* main container */}
         <div className="part">
           <Hero/>
