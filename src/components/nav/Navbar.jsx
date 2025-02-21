@@ -19,13 +19,13 @@ const Navbar = () => {
             </div>
             <div className="flex w-full right-0 justify-end items-center ">
               <div className=" justify-end pr-16 gap-8 sm:flex lg:pr-0">
-                <Link to={"/"} className="">
-                  <button className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white hover:bg-primary/90">
+                <Link to={"/"} className="px-0 sm:px-2">
+                  <button className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white dark:text-white dark:bg-blue-400 hover:bg-primary/90">
                     <BiHome className="size-6" />
                   </button>
                 </Link>
-                <Link to={"/84930/84390"}>
-                  <button className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white hover:bg-primary/90">
+                <Link to={"/84930/84390"} className="px-2 sm:px-2">
+                  <button className="rounded-md bg-primary px-7 py-3 text-base font-medium dark:text-white dark:bg-blue-400 text-white hover:bg-primary/90">
                     <BiRegistered className="size-6" />
                   </button>
                 </Link>
