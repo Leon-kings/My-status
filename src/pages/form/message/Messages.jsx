@@ -79,41 +79,40 @@ const Messsages = () => {
         </div>
       </div> */}
       <div className="w-full px-4">
-  <div className="flex items-center justify-center text-gray-800">
-    <div className="w-full max-w-xl p-6 bg-white rounded-lg shadow-2xl">
-      <div className="Messages w-full">
-        <form onSubmit={handleSubmit}>
-          <div className="head">
-            <h2 className="text-blue-400 font-bold text-2xl text-center py-4">
-              MESSAGE ME
-            </h2>
-          </div>
-          <div className="w-full space-y-4">
-            {inputs.map((input) => (
-              <FormInput
-                key={input.id}
-                className="w-full p-3 border rounded-md"
-                {...input}
-                value={values[input.name]}
-                onChange={onChange}
-              />
-            ))}
-            <div className="text-center">
-              <button className="btn w-full md:w-44 bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 transition duration-300">
-                Send
-              </button>
+        <div className="flex items-center justify-center text-gray-800">
+          <div className="w-full max-w-xl p-6 bg-white rounded-lg shadow-2xl">
+            <div className="Messages w-full">
+              <form onSubmit={handleSubmit}>
+                <div className="head">
+                  <h2 className="text-blue-400 font-bold text-2xl text-center py-4">
+                    MESSAGE ME
+                  </h2>
+                </div>
+                <div className="w-full space-y-4">
+                  {inputs.map((input) => (
+                    <FormInput
+                      key={input.id}
+                      className="w-full p-3 border rounded-md"
+                      {...input}
+                      value={values[input.name]}
+                      onChange={onChange}
+                    />
+                  ))}
+                  <div className="text-center">
+                    <button className="btn w-full md:w-44 bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 transition duration-300">
+                      Send
+                    </button>
+                  </div>
+                  <p className="text-black text-sm md:text-base p-4 max-w-[500px] mx-auto">
+                    The Contact Us component is a form that collects information
+                    from your visitors and enables them to contact you.
+                  </p>
+                </div>
+              </form>
             </div>
-            <p className="text-black text-sm md:text-base p-4 max-w-[500px] mx-auto">
-              The Contact Us component is a form that collects information from
-              your visitors and enables them to contact you.
-            </p>
           </div>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-
     </>
   );
 };
