@@ -47,32 +47,34 @@ const Messsages = () => {
   };
   return (
     <>
-      <div className="w-full xl:w-full items-center p-4 md:w-full sm:w-full flex text-gray-800 justify-center">
-        <div className="w-full p-8 bg-white rounded shadow-2xl">
-          <div className="Messsages w-full">
-            <form onSubmit={handleSubmit}>
-              <div className="head">
-                <h2 className="text-blue-400 font-bold py-4"> MESSAGE ME</h2>
-              </div>
-              <div className="w-full">
-                {inputs.map((input) => (
-                  <FormInput
-                    key={input.id}
-                    className="p-3"
-                    {...input}
-                    value={values[input.name]}
-                    onChange={onChange}
-                  />
-                ))}
+      <div className="w-full xl:w-full">
+        <div className="items-center p-4 md:w-full sm:w-full flex text-gray-800 justify-center">
+          <div className="w-full p-8 bg-white rounded shadow-2xl">
+            <div className="Messsages w-full">
+              <form onSubmit={handleSubmit}>
                 <div className="head">
-                  <button className="btn w-44 text-white">Send</button>
+                  <h2 className="text-blue-400 font-bold py-4"> MESSAGE ME</h2>
                 </div>
-                <p className="text-black p-4 max-w-[500px]">
-                  The Contact Us component is a form that collects information
-                  from your visitors and enables them to contact you.
-                </p>
-              </div>
-            </form>
+                <div className="w-full">
+                  {inputs.map((input) => (
+                    <FormInput
+                      key={input.id}
+                      className="p-3"
+                      {...input}
+                      value={values[input.name]}
+                      onChange={onChange}
+                    />
+                  ))}
+                  <div className="head">
+                    <button className="btn w-44 text-white">Send</button>
+                  </div>
+                  <p className="text-black p-4 max-w-[500px]">
+                    The Contact Us component is a form that collects information
+                    from your visitors and enables them to contact you.
+                  </p>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
