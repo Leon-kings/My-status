@@ -162,7 +162,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-5/12">
-              {/* <div className="w-full px-4">
+              <div className="w-full px-4">
                 <div className="text-center items-center justify-center text-gray-800">
                   <div className="w-full max-w-xl p-6 bg-white rounded-lg shadow-2xl">
                     <div className="Messages w-full">
@@ -197,7 +197,7 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

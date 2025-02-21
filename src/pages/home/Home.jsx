@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 // image component
 
 import Services from "../sercices/Services";
-import Contact from "../contact/Contact";
+// import Contact from "../contact/Contact";
 // import IT from "../skillsets/Skill-set";
 import Hero from "../head/Heading";
 import Blog from "../skillsets/Potfolio";
@@ -45,7 +45,7 @@ export default function Home() {
           <Blog/>
         </div>
         <div className="part">
-          <Contact />
+          {/* <Contact /> */}
         </div>
         {/* nice flowback */}
         <div>
