@@ -51,7 +51,7 @@ const Contact = () => {
   // return values
   return (
     <>
-      <section className="w-full p-6 relative dark:text-white text-white xl:w-full overflow-hidden bg-black">
+      <section className="w-full relative dark:text-white text-white xl:w-full overflow-hidden bg-black">
         {/* p-6 */}
         <div className="text-center text-white pt-4 pb-8">
           <h2 className="text-3xl font-bold leading-tight text-whitesm:text-4xl xl:text-5xl font-pj">
@@ -167,7 +167,7 @@ const Contact = () => {
             </div>
             {/* 2nd side form */}
             <div className="w-full bg-amber-50 p-4 dark:text-white rounded-2xl sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-5/12">
-              <div className="w-full text-center items-center justify-center text-gray-800 px-4">
+              <div className="w-full text-center items-center justify-center text-gray-800">
                 <div className="w-full p-6 bg-white rounded-lg shadow-2xl">
                   <div className="Messages w-full">
                     <form onSubmit={handleSubmit}>
