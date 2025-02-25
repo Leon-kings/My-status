@@ -7,6 +7,7 @@ import Services from "./pages/sercices/Services";
 import Contact from "./pages/contact/Contact";
 import Message from "./pages/form/msg/Message";
 import Messsages from "./pages/form/message/Messages";
+import Footer from "./components/footer/Footer";
 React;
 const App = () => {
   const [videoEnded, setVideoEnded] = useState(false);
@@ -40,6 +41,7 @@ const App = () => {
                 <Route path="/8340u20u" element={<Contact />} />
                 
               </Routes>
+              <Footer/>
             </BrowserRouter>
           </main>
         )}

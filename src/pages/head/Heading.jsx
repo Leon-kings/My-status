@@ -7,13 +7,13 @@ import me from "../../assets/images/356202168_1515581109215839_71918368328666583
 const Hero = () => {
   return (
     <>
-      <div className="w-full relative text-white pb-[110px] pt-[120px] dark:bg-dark lg:pt-[150px]">
+      <div className="w-full relative dark:text-white text-white pb-[110px] pt-[120px] dark:bg-dark lg:pt-[150px]">
         <div className="w-full">
           <div className="flex flex-wrap">
             <div className="w-full px-6 lg:w-5/12">
               <div className="hero-content ">
                 <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
-                  Am Software Developer
+                  Am Software Developer And Graphical Design
                 </h1>
                 <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
                   Software development is the process of designing and
@@ -105,7 +105,7 @@ export default Hero;
 const SingleImage = ({ imgSrc }) => {
   return (
     <>
-      <div className="flex w-full items-center justify-center">
+      <div className="flex dark:text-white w-full items-center justify-center">
         <img src={imgSrc} alt="" className="h-20 w-20 rounded-2xl" />
       </div>
     </>

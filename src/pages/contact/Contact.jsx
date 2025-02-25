@@ -5,17 +5,19 @@ import FormInput from "../form/action/FormInput";
 
 React;
 const Contact = () => {
+  // variable to get values
   const [values, setValues] = useState({
     email: "",
     message: "",
   });
+  //  variable used in form
   const inputs = [
     {
       id: 1,
       name: "email",
       type: "email",
       placeholder: "Email",
-      errorMessage: "email should be valid and should incloude @ symbols",
+      errorMessage: "Email should be valid and should incloude @ symbols",
       label: "Email",
       required: true,
     },
@@ -24,32 +26,34 @@ const Contact = () => {
       name: "message",
       type: "text",
       placeholder: "Message me",
-      errorMessage: "message needed here",
+      errorMessage: "Message needed here",
       label: "Message us",
       required: true,
     },
   ];
+  // Navigate declaration
   const Navigate = useNavigate();
-
+  // HandleSubmit function to submit to database
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(values);
     try {
       await axios.post("https://shopsnodejs.onrender.com/message-me", values);
-
       Navigate("/login");
     } catch (err) {
       console.log(err);
     }
   };
-
+  // HandleChanges function to get all changes
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
+  // return values
   return (
     <>
-      <section className="w-full relative text-white xl:w-full overflow-hidden bg-black">
-        <div className="text-center pt-4 pb-8">
+      <section className="w-full p-6 relative dark:text-white text-white xl:w-full overflow-hidden bg-black">
+        {/* p-6 */}
+        <div className="text-center text-white pt-4 pb-8">
           <h2 className="text-3xl font-bold leading-tight text-whitesm:text-4xl xl:text-5xl font-pj">
             CONTACTS
           </h2>
@@ -161,40 +165,39 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-5/12">
-              <div className="w-full px-4">
-                <div className="text-center items-center justify-center text-gray-800">
-                  <div className="w-full max-w-xl p-6 bg-white rounded-lg shadow-2xl">
-                    <div className="Messages w-full">
-                      <form onSubmit={handleSubmit}>
-                        <div className="head">
-                          <h2 className="text-blue-400 font-bold text-2xl text-center py-4">
-                            MESSAGE ME
-                          </h2>
+            {/* 2nd side form */}
+            <div className="w-full bg-amber-50 p-4 dark:text-white rounded-2xl sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-5/12">
+              <div className="w-full text-center items-center justify-center text-gray-800 px-4">
+                <div className="w-full p-6 bg-white rounded-lg shadow-2xl">
+                  <div className="Messages w-full">
+                    <form onSubmit={handleSubmit}>
+                      <div className="head">
+                        <h2 className="text-blue-400 font-bold text-2xl text-center py-4">
+                          MESSAGE ME
+                        </h2>
+                      </div>
+                      <div className="w-full space-y-4">
+                        {inputs.map((input) => (
+                          <FormInput
+                            key={input.id}
+                            className="w-full font-bold p-3 border rounded-md"
+                            {...input}
+                            value={values[input.name]}
+                            onChange={onChange}
+                          />
+                        ))}
+                        <div className="text-center">
+                          <button className="btn w-full md:w-44 bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 transition duration-300">
+                            Send
+                          </button>
                         </div>
-                        <div className="w-full space-y-4">
-                          {inputs.map((input) => (
-                            <FormInput
-                              key={input.id}
-                              className="w-full p-3 border rounded-md"
-                              {...input}
-                              value={values[input.name]}
-                              onChange={onChange}
-                            />
-                          ))}
-                          <div className="text-center">
-                            <button className="btn w-full md:w-44 bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 transition duration-300">
-                              Send
-                            </button>
-                          </div>
-                          <p className="text-black text-sm md:text-base p-4 max-w-[500px] mx-auto">
-                            The Contact Us component is a form that collects
-                            information from your visitors and enables them to
-                            contact you.
-                          </p>
-                        </div>
-                      </form>
-                    </div>
+                        <p className="text-black text-sm md:text-base p-4 max-w-[500px] mx-auto">
+                          The Contact Us component is a form that collects
+                          information from your visitors and enables them to
+                          contact you.
+                        </p>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>

@@ -10,12 +10,16 @@ const Navbar = () => {
         <div className="w-full pt-4 px-4 md:px-6 lg:px-8">
           <div className="relative flex items-center justify-between">
             <div className="w-40 h-30 object-center">
-              <img src={logo} alt="" className="dark:hidden object-cover" />
-              <img
-                src={logo}
-                alt=""
-                className="hidden dark:block object-cover"
-              />
+              <Link to={"/"}>
+                <img src={logo} alt="" className="dark:hidden object-cover" />
+              </Link>
+              <Link to={"/"}>
+                <img
+                  src={logo}
+                  alt=""
+                  className="hidden dark:block object-cover"
+                />
+              </Link>
             </div>
             <div className="flex w-full right-0 justify-end items-center ">
               <div className=" justify-end pr-16 gap-8 sm:flex lg:pr-0">

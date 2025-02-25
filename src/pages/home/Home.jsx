@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 // image component
-
 import Services from "../sercices/Services";
-// import Contact from "../contact/Contact";
-// import IT from "../skillsets/Skill-set";
+import Contact from "../contact/Contact";
 import Hero from "../head/Heading";
 import Blog from "../skillsets/Potfolio";
+import Container from "../container/Container";
+
 // end of images
 
 React;
@@ -33,7 +33,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="w-full bg-black rounded shadow-md">
+      <div className="w-full bg-black rounded shadow-md dark:text-white">
         {/* main container */}
         <div className="part">
           <Hero/>
@@ -44,8 +44,11 @@ export default function Home() {
         <div className="part">
           <Blog/>
         </div>
-        <div className="part">
-          {/* <Contact /> */}
+        <div className="w-full">
+          <Contact />
+        </div>
+        <div className="w-full">
+          <Container/>
         </div>
         {/* nice flowback */}
         <div>
