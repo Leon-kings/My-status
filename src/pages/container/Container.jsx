@@ -21,7 +21,7 @@ export default function Container() {
                 <div className="grid w-full sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
                   <div className="sm:max-w-lg">
                     <h1 className="text-4xl font-bold tracking-tight text-blue-400 sm:text-6xl">
-                      LD Tech is Finally Here
+                      Languages and Structal Languages
                     </h1>
                     <p className="mt-4 text-lg text-white">
                       This year, our new summer collection will shelter you the
@@ -43,33 +43,13 @@ export default function Container() {
                             <div className="grid shrink-0 grid-cols-1 ">
                               <div className="h-44 w-40 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                                 <img
-                                  src={image}
+                                  src='https://web-design-eastbourne.co.uk/News/wp-content/uploads/2023/11/java.jpg'
                                   className="size-fit object-cover"
                                 />
                               </div>
                               <div className="h-44 w-40 overflow-hidden rounded-lg">
                                 <img
-                                  src={image}
-                                  className="size-fit object-cover"
-                                />
-                              </div>
-                            </div>
-                            <div className="grid shrink-0 grid-cols-1 ">
-                              <div className="h-44 w-40 overflow-hidden rounded-lg">
-                                <img
-                                  src={image}
-                                  className="size-fit object-cover"
-                                />
-                              </div>
-                              <div className="h-44 w-40 overflow-hidden rounded-lg">
-                                <img
-                                  src={image}
-                                  className="size-fit object-cover"
-                                />
-                              </div>
-                              <div className="h-44 w-40 overflow-hidden rounded-lg">
-                                <img
-                                  src={image}
+                                  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2PwRQttmK18ZBYWADrccj8tjjsnIWtDFvqQ&s'
                                   className="size-fit object-cover"
                                 />
                               </div>
@@ -77,7 +57,27 @@ export default function Container() {
                             <div className="grid shrink-0 grid-cols-1 ">
                               <div className="h-44 w-40 overflow-hidden rounded-lg">
                                 <img
-                                  src={image}
+                                  src='https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/4085715/cover_image/regular_1708x683/0925-3D_Data_Visualization_with_Open_Source_Tools_A_Tutorial_Using_VTK_Dan_Newsletter-8de886e8cfe7817dd6f2502c43aacdce.png'
+                                  className="size-fit object-cover"
+                                />
+                              </div>
+                              <div className="h-44 w-40 overflow-hidden rounded-lg">
+                                <img
+                                  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJY57MnPNeUz2cVItQ-QJlp_oo_UlkUwwEA&s'
+                                  className="size-fit object-cover"
+                                />
+                              </div>
+                              <div className="h-44 w-40 overflow-hidden rounded-lg">
+                                <img
+                                  src='https://assets.codeguru.com/uploads/2003/02/C-tutorials.jpg'
+                                  className="size-fit object-cover"
+                                />
+                              </div>
+                            </div>
+                            <div className="grid shrink-0 grid-cols-1 ">
+                              <div className="h-44 w-40 overflow-hidden rounded-lg">
+                                <img
+                                  src='https://cdn.educba.com/academy/wp-content/uploads/2019/06/What-is-Sass-2.jpg'
                                   className="size-fit object-cover"
                                 />
                               </div>
