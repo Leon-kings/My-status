@@ -7,7 +7,7 @@ React;
 export default function Footer() {
   return (
     <>
-    <footer className="bg-black text-white py-6">
+    <footer className="bg-black text-white pt-20 py-6">
       <div className="container mx-auto text-center">
         <p className="text-sm">&copy; {new Date().getFullYear()} LD. All rights reserved.</p>
       
