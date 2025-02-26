@@ -5,8 +5,7 @@ import image1 from "../../assets/images/nodejs-icon-2048x2048-rueyo8fw.png";
 import image2 from "../../assets/images/images1.png";
 import me from "../../assets/images/356202168_1515581109215839_7191836832866658358_n.jpg";
 import image3 from '../../assets/images/png-transparent-tailwind-css-hd-logo.png'
-import image4 from '../../assets/images/sass.png'
-import image5 from '../../assets/images/CSS-Logo.png'
+
 const Hero = () => {
   return (
     <>
@@ -16,7 +15,7 @@ const Hero = () => {
             <div className="w-full px-6 lg:w-5/12">
               <div className="hero-content ">
                 <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
-                  Am Software Developer And Graphical Design
+                  Am Software Developer And Graphic Designer
                 </h1>
                 <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
                   Software development is the process of designing and
