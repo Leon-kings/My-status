@@ -24,10 +24,9 @@ export default function Container() {
                       Languages and Structural Languages
                     </h1>
                     <p className="mt-4 text-lg text-white">
-                      I&apos;m a self-motivated and hardworking individual who is
-                      always ready to learn new things and work in a team.
+                      I&apos;m a self-motivated and hardworking individual who
+                      is always ready to learn new things and work in a team.
                     </p>
-                    <br />
                     <p className="mt-4 text-lg text-white">
                       Check It out for Your best Wants.We glad to Offer you
                       Qualited Products
