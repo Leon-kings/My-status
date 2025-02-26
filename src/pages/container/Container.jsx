@@ -23,13 +23,13 @@ export default function Container() {
                     <h1 className="text-4xl font-bold tracking-tight text-blue-400 sm:text-6xl">
                       LD Tech is Finally Here
                     </h1>
-                    <p className="mt-4 text-xl text-gray-500">
+                    <p className="mt-4 text-lg text-white">
                       This year, our new summer collection will shelter you the
                       best magnificient Computers To advance technology Here in
                       Rwanda.
                     </p>
                     <br />
-                    <p className="mt-4 text-xl text-gray-500">
+                    <p className="mt-4 text-lg text-white">
                       Check It out for Your best Wants.We glad to Offer you
                       Qualited Products
                     </p>
