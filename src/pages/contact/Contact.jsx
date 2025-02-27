@@ -23,6 +23,15 @@ const Contact = () => {
     },
     {
       id: 2,
+      name: "name",
+      type: "name",
+      placeholder: "Names",
+      errorMessage: "Name should be eliteral",
+      label: "Names",
+      required: true,
+    },
+    {
+      id: 2,
       name: "message",
       type: "text",
       placeholder: "Message me",
@@ -39,7 +48,7 @@ const Contact = () => {
     console.log(values);
     try {
       await axios.post("https://leon-portfolio-xm7a.onrender.com/0998C28", values);
-      Navigate("/login");
+      Navigate("/");
     } catch (err) {
       console.log(err);
     }
