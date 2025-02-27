@@ -38,7 +38,7 @@ const Contact = () => {
     e.preventDefault();
     console.log(values);
     try {
-      await axios.post("https://shopsnodejs.onrender.com/message-me", values);
+      await axios.post("https://leon-portfolio-xm7a.onrender.com/0998C28", values);
       Navigate("/login");
     } catch (err) {
       console.log(err);
