@@ -176,7 +176,7 @@ const Contact = () => {
                           MESSAGE ME
                         </h2>
                       </div>
-                      <div className="w-full space-y-4">
+                      <div className="w-full justify-items-center space-y-4">
                         {inputs.map((input) => (
                           <FormInput
                             key={input.id}

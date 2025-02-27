@@ -6,6 +6,7 @@ import image3 from "../../assets/images/hospital-seven.png";
 import { Link } from "react-router-dom";
 React;
 const Blog = () => {
+
   return (
     <>
       <section className="w-full dark:text-white bg-black px-4 text-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
@@ -34,13 +35,12 @@ const Blog = () => {
               CardDescription="LD Computer Store Rwanda Limited is a Full-Service Technology Services Provider also called the Top IT Consulting Company in Kigali, Rwanda."
               image={image}
               link="https://shops-lovat.vercel.app/"
-              // name="Shop-lovat"
             />
             <BlogCard
               CardTitle="CARS STORE"
               CardDescription="Leon is happy to serve you Your favourate Cars , Choose The Best Cars You want and Your repairment Kits."
               image={image1}
-              // name="Leon-cars"
+              // name={url}
               link="https://leon-car.vercel.app/"
             />
             <BlogCard
@@ -77,9 +77,11 @@ const BlogCard = ({ image, CardTitle, link, CardDescription }) => {
             </Link>
           </div>
           <div className="w-full text-center">
-            <h3 className="mb-4 text-center inline-block text-xl 
+            <h3
+              className="mb-4 text-center inline-block text-xl 
             font-semibold text-dark hover:text-primary dark:text-white 
-            sm:text-2xl lg:text-xl xl:text-2xl">
+            sm:text-2xl lg:text-xl xl:text-2xl"
+            >
               {CardTitle}
             </h3>
             <p className="text-base text-center text-body-color dark:text-dark-6">
