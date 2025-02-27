@@ -9,6 +9,7 @@ const Contact = () => {
   const [values, setValues] = useState({
     email: "",
     message: "",
+    name: ""
   });
   //  variable used in form
   const inputs = [
@@ -31,7 +32,7 @@ const Contact = () => {
       required: true,
     },
     {
-      id: 2,
+      id: 3,
       name: "message",
       type: "text",
       placeholder: "Message me",
