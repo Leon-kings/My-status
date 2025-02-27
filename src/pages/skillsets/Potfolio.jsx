@@ -40,21 +40,18 @@ const Blog = () => {
               CardTitle="CARS STORE"
               CardDescription="Leon is happy to serve you Your favourate Cars , Choose The Best Cars You want and Your repairment Kits."
               image={image1}
-              // name={url}
               link="https://leon-car.vercel.app/"
             />
             <BlogCard
               CardTitle="LEON-STATUS"
               CardDescription="Software development is the process of designing and implementing a software solution to satisfy a user."
               image={image2}
-              // name="Leon-status"
               link="https://leon-status.vercel.app/"
             />
             <BlogCard
               CardTitle="MEDIPLUS"
               CardDescription="Software development is the process of designing and implementing a software solution to satisfy a user."
               image={image3}
-              // name="Mediplus"
               link="https://hospital-seven-sigma.vercel.app/"
             />
           </div>
