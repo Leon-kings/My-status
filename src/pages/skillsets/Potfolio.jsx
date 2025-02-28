@@ -6,7 +6,6 @@ import image3 from "../../assets/images/hospital-seven.png";
 import { Link } from "react-router-dom";
 React;
 const Blog = () => {
-
   return (
     <>
       <section className="w-full dark:text-white bg-black px-4 text-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
