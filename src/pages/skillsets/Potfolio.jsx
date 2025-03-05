@@ -1,8 +1,12 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import image from "../../assets/images/Screenshot.png";
 import image1 from "../../assets/images/Screenshot1.png";
 import image2 from "../../assets/images/Screenshot2.png";
 import image3 from "../../assets/images/hospital-seven.png";
+import image5 from "../../assets/images/weather.png";
+import image6 from "../../assets/images/real-estate.png";
+import image7 from '../../assets/images/react-weather.png'
 import { Link } from "react-router-dom";
 React;
 const Blog = () => {
@@ -32,26 +36,62 @@ const Blog = () => {
             <BlogCard
               CardTitle="COMPUTERS STORE"
               CardDescription="LD Computer Store Rwanda Limited is a Full-Service Technology Services Provider also called the Top IT Consulting Company in Kigali, Rwanda."
+              frameWork="React + Tailwinds + Nodejs + Material UI"
               image={image}
               link="https://shops-lovat.vercel.app/"
             />
             <BlogCard
               CardTitle="CARS STORE"
               CardDescription="Leon is happy to serve you Your favourate Cars , Choose The Best Cars You want and Your repairment Kits."
+              frameWork="React + CSS + Nodejs"
               image={image1}
               link="https://leon-car.vercel.app/"
             />
             <BlogCard
               CardTitle="LEON-STATUS"
               CardDescription="Software development is the process of designing and implementing a software solution to satisfy a user."
+              frameWork="React + Tailwinds + Nodejs"
               image={image2}
               link="https://leon-status.vercel.app/"
             />
             <BlogCard
               CardTitle="MEDIPLUS"
               CardDescription="Software development is the process of designing and implementing a software solution to satisfy a user."
+              frameWork="React + Tailwinds + Nodejs"
               image={image3}
               link="https://hospital-seven-sigma.vercel.app/"
+            />
+            {/*  */}
+            <BlogCard
+              CardTitle="TODO LIST"
+              CardDescription="App that save for you a plan , you want to be performing in upcomming time .So that you can see you inputed tasks."
+              frameWork="React + CSS + Cookies"
+              image={image3}
+              link="https://todolist-ld.vercel.app/"
+            />
+            {/*  */}
+            <BlogCard
+              CardTitle="WEATHER APP"
+              CardDescription="This is Weather app which can help to check out Daily temperature of you region."
+              frameWork="Java script + html + Weather API"
+              image={image5}
+              link="https://weather-silk-nu.vercel.app/"
+            />
+            {/*  */}
+            <BlogCard
+              CardTitle="REAL-ESTATE"
+              CardDescription="Real-estate , this is the real estate project where you can choose your best fit home."
+              frameWork="React + Tailwinds + Nodejs + Frame-motion "
+              image={image6}
+              link="https://hospital-seven-sigma.vercel.app/"
+            />
+            {/*  */}
+            <BlogCard
+              CardTitle="REACT-WEATHER APP"
+              CardDescription="React weather app is app developed to get access to check out weather of the your location ."
+              frameWork="React + Tailwinds + Material UI"
+              image={image7}
+              link=""
             />
           </div>
         </div>

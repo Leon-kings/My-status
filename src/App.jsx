@@ -8,6 +8,7 @@ import Contact from "./pages/contact/Contact";
 import Message from "./pages/form/msg/Message";
 import Messsages from "./pages/form/message/Messages";
 import Footer from "./components/footer/Footer";
+import Post from "./pages/form/post/Post";
 React;
 const App = () => {
   const [videoEnded, setVideoEnded] = useState(false);
@@ -39,6 +40,7 @@ const App = () => {
                 <Route path="/84930/84398" element={<Messsages />} />
                 <Route path="/7493097" element={<Services />} />
                 <Route path="/8340u20u" element={<Contact />} />
+                <Route path="/post" element={<Post />} />
                 
               </Routes>
               <Footer/>

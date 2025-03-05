@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link} from "react-router-dom";
 import image from "../../../assets/images/Screenshot2.png";
 import image1 from "../../../assets/images/Screenshot1.png";
 import image2 from "../../../assets/images/Screenshot.png";
@@ -29,10 +29,11 @@ const Message = () => {
               </p>
               <div className="relative inline-flex mt-10 group">
                 <div className="absolute transitiona-all "></div>
-
-                <button className="inline-flex relative items-center justify-center w-full sm:w-auto px-8 py-3 sm:text-sm text-base sm:py-3.5 font-semibold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
-                  Read Exclusive Post
-                </button>
+                {/* <Link to={"/post"}> */}
+                  <button className="inline-flex relative items-center justify-center w-full sm:w-auto px-8 py-3 sm:text-sm text-base sm:py-3.5 font-semibold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                    Only for Admin
+                  </button>
+                {/* </Link> */}
               </div>
             </div>
           </div>
