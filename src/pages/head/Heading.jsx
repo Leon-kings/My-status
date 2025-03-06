@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
 import React from "react";
+// import { motion } from 'framer-motion';
 React;
-import image from "../../assets/images/images.png";
-import image1 from "../../assets/images/nodejs-icon-2048x2048-rueyo8fw.png";
-import image2 from "../../assets/images/images1.png";
 import me from "../../assets/images/356202168_1515581109215839_7191836832866658358_n.jpg";
-import image3 from '../../assets/images/png-transparent-tailwind-css-hd-logo.png'
+import { Link } from "react-router-dom";
+import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { BiEdit, BiEnvelopeOpen } from "react-icons/bi";
+import { FaFacebook } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -14,39 +16,53 @@ const Hero = () => {
           <div className="flex flex-wrap">
             <div className="w-full px-6 lg:w-5/12">
               <div className="hero-content ">
-                <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
-                  Am Software Developer And Graphic Designer
-                </h1>
-                <p className="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
+                <div className="flex items-center justify-center lg:justify-start gap-2 mb-10">
+                  <span className="w-20 h-0.5 bg-white"></span>
+                </div>
+                <h2 className="mb-5 text-4xl text-center font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
+                  Am Mr Leon , Software Developer And Graphic Designer
+                </h2>
+                <p className="mb-8 max-w-[480px] text-base text-center text-body-color dark:text-dark-6">
                   Software development is the process of designing and
                   implementing a software solution to satisfy a user. The
                   process is more encompassing than programming, writing code.
                 </p>
-                <ul className="flex flex-wrap items-center"></ul>
-                <div className="clients pt-16">
-                  <div className="flex items-center rounded-2xl space-x-4">
-                    <SingleImage imgSrc={image} />
+                <div className="text-center lg:text-left mb-20 lg:mb-0">
+                  <p className="font-normal text-white dark:text-white text-sm md:text-md xl:text-lg mb-10">
+                    Hi, I’m Leon. I’m UI/UX Designer. If you are looking for
+                    Designer <br />
+                    to build your brands and grow your business Let’s shake
+                    hands <br />
+                    with me.
+                  </p>
+                  <p className="text-white text-center dark:text-white p-4">
+                    Provide our customers with optimized user-friendly
+                    experience to increase the efficiency of digital products.
+                  </p>
 
-                    <SingleImage imgSrc={image1} />
-
-                    <SingleImage imgSrc={image2} />
-
-                    <SingleImage imgSrc={image3} />
+                  <div className="space-y-5 mt-4 pt-6 lg:space-x-5 mb-10">
+                    <Link className="block md:inline px-8 py-3 font-medium text-white text-lg rounded-md transiton ease-in-out duration-300">
+                      <button className="text-white dark:bg-blue-400 dark:text-white font-bold">
+                        Hire me
+                      </button>
+                    </Link>
+                    <Link className="block md:inline px-8 py-3 font-medium hover:text-white transiton ease-linear duration-300">
+                      <button className="text-white dark:text-white dark:bg-blue-400">
+                        Read more
+                      </button>
+                    </Link>
                   </div>
-                </div>
-                <div className="w-full px-5 pt-12">
-                  <h2 className="mainphoto text-white">Main Languages :</h2>
-                  <ul className="new pt-8">
-                    <li className="text-blue-400 font-bold">Js</li>
-                    <li className="text-blue-400 font-bold">PHP</li>
-                  </ul>
-                  <h2 className="mainphoto pt-8 text-white">
-                    Responsiveness :
-                  </h2>
-                  <ul className="new pt-4">
-                    <li className="text-blue-400 font-bold">Tailwinds css</li>
-                    <li className="text-blue-400 font-bold">Post css</li>
-                  </ul>
+
+                  <hr className="text-gray-500 mb-5" />
+
+                  <div className="w-full flex">
+                    <BsGithub className="size-6 w-44 " />
+                    <BiEdit className="size-6 flex w-40" />
+                    <FaFacebook className="size-6 w-44 " />{" "}
+                    <BsWhatsapp className="size-6 w-44 " />
+                    <BiEnvelopeOpen className="size-6 w-44 " />{" "}
+                    <BsLinkedin className="size-6 w-44 " />
+                  </div>
                 </div>
               </div>
             </div>
@@ -105,13 +121,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-const SingleImage = ({ imgSrc }) => {
-  return (
-    <>
-      <div className="flex dark:text-white w-full items-center justify-center">
-        <img src={imgSrc} alt="" className="h-20 w-20 rounded-2xl object-cover" />
-      </div>
-    </>
-  );
-};

@@ -30,7 +30,7 @@ const Message = () => {
               <div className="relative inline-flex mt-10 group">
                 <div className="absolute transitiona-all "></div>
                 {/* <Link to={"/post"}> */}
-                  <button className="inline-flex relative items-center justify-center w-full sm:w-auto px-8 py-3 sm:text-sm text-base sm:py-3.5 font-semibold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                  <button className="inline-flex dark:bg-blue-400 relative items-center justify-center w-full sm:w-auto px-8 py-3 sm:text-sm text-base sm:py-3.5 font-semibold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                     Only for Admin
                   </button>
                 {/* </Link> */}

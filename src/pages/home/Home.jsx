@@ -5,6 +5,7 @@ import Contact from "../contact/Contact";
 import Hero from "../head/Heading";
 import Blog from "../skillsets/Potfolio";
 import Container from "../container/Container";
+import Category from "../category/Category";
 
 // end of images
 
@@ -37,6 +38,9 @@ export default function Home() {
         {/* main container */}
         <div className="part">
           <Hero/>
+        </div>
+        <div className="part">
+          <Category/>
         </div>
         <div className="part">
           <Services />

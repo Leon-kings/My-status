@@ -7,6 +7,7 @@ import image3 from "../../assets/images/hospital-seven.png";
 import image5 from "../../assets/images/weather.png";
 import image6 from "../../assets/images/real-estate.png";
 import image7 from '../../assets/images/react-weather.png'
+import todo from '../../assets/images/todo.png'
 import { Link } from "react-router-dom";
 React;
 const Blog = () => {
@@ -66,7 +67,7 @@ const Blog = () => {
               CardTitle="TODO LIST"
               CardDescription="App that save for you a plan , you want to be performing in upcomming time .So that you can see you inputed tasks."
               frameWork="React + CSS + Cookies"
-              image={image3}
+              image={todo}
               link="https://todolist-ld.vercel.app/"
             />
             {/*  */}
@@ -91,7 +92,7 @@ const Blog = () => {
               CardDescription="React weather app is app developed to get access to check out weather of the your location ."
               frameWork="React + Tailwinds + Material UI"
               image={image7}
-              link=""
+              link="https://react-weather-delta-fawn.vercel.app/"
             />
           </div>
         </div>
@@ -102,7 +103,7 @@ const Blog = () => {
 
 export default Blog;
 
-const BlogCard = ({ image, CardTitle, link, CardDescription }) => {
+const BlogCard = ({ image, CardTitle, link, CardDescription, frameWork }) => {
   return (
     <>
       <div className="w-full px-4 md:w-1/2 lg:w-1/3">
@@ -123,6 +124,7 @@ const BlogCard = ({ image, CardTitle, link, CardDescription }) => {
             <p className="text-base text-center text-body-color dark:text-dark-6">
               {CardDescription}
             </p>
+            <h2 className="text-center font-bold text-blue-400 dark:text-blue-500"> {frameWork}</h2>
           </div>
         </div>
       </div>
