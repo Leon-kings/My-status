@@ -8,8 +8,8 @@ export default function Category() {
   };
   return (
     <>
-      <section className="py-8 md:py-16">
-        <div className="container max-w-screen-xl mx-auto px-4">
+      <section className="w-full py-8 md:py-16">
+        <div className="container w-full mx-auto px-4">
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
             initial="hidden"
