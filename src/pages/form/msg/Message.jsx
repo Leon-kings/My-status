@@ -1,9 +1,11 @@
 import React from "react";
 // import { Link} from "react-router-dom";
-import image from "../../../assets/images/Screenshot2.png";
+import image from "../../../assets/images/developer.svg";
 import image1 from "../../../assets/images/Screenshot1.png";
 import image2 from "../../../assets/images/Screenshot.png";
-
+import imagex from '../../../assets/images/developer-dark.svg'
+import image5 from '../../../assets/images/Screenshot2.png'
+import image6 from '../../../assets/images/hospital-seven.png'
 React;
 const Message = () => {
   return (
@@ -19,6 +21,9 @@ const Message = () => {
               <p className="text-5xl sm:text-6xl lg:text-7xl">
                 <img src={image} alt="" className="w-full" />
               </p>
+              <p className="text-5xl sm:text-6xl hidden dark:block lg:text-7xl">
+                <img src={imagex} alt="" className="w-full" />
+              </p>
               <h1 className="mt-10 flex text-xl font-bold text-white ">
                 Leon Last Projects
               </h1>
@@ -29,11 +34,11 @@ const Message = () => {
               </p>
               <div className="relative inline-flex mt-10 group">
                 <div className="absolute transitiona-all "></div>
-                {/* <Link to={"/post"}> */}
+               
                   <button className="inline-flex dark:bg-blue-400 relative items-center justify-center w-full sm:w-auto px-8 py-3 sm:text-sm text-base sm:py-3.5 font-semibold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                     Only for Admin
                   </button>
-                {/* </Link> */}
+              
               </div>
             </div>
           </div>
@@ -95,7 +100,7 @@ const Message = () => {
                     <div className="flex items-start lg:items-center">
                       <img
                         className="lg:h-24 w-14 h-14 lg:w-30 rounded-xl object-cvoer"
-                        src={image}
+                        src={image5}
                         alt=""
                       />
 
@@ -118,7 +123,7 @@ const Message = () => {
                     <div className="flex items-start lg:items-center">
                       <img
                         className="lg:h-24 w-14 h-14 lg:w-30 rounded-xl object-cvoer"
-                        src={image}
+                        src={image6}
                         alt=""
                       />
 

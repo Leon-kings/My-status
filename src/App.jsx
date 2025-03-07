@@ -8,7 +8,7 @@ import Contact from "./pages/contact/Contact";
 import Message from "./pages/form/msg/Message";
 import Messsages from "./pages/form/message/Messages";
 import Footer from "./components/footer/Footer";
-import Post from "./pages/form/post/Post";
+import Experience from "./pages/experience/Experience";
 React;
 const App = () => {
   const [videoEnded, setVideoEnded] = useState(false);
@@ -31,7 +31,7 @@ const App = () => {
             <source src={Opening} type="video/mp4" />
           </video>
         ) : (
-          <main className="w-full bg-white">
+          <main className="w-full">
             <BrowserRouter>
               <Navbar />
               <Routes>
@@ -40,10 +40,9 @@ const App = () => {
                 <Route path="/84930/84398" element={<Messsages />} />
                 <Route path="/7493097" element={<Services />} />
                 <Route path="/8340u20u" element={<Contact />} />
-                <Route path="/post" element={<Post />} />
-                
+                <Route path="/84940/9802" element={<Experience />} />
               </Routes>
-              <Footer/>
+              <Footer />
             </BrowserRouter>
           </main>
         )}

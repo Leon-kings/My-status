@@ -33,6 +33,12 @@ const Navbar = () => {
                     <BiRegistered className="size-6" />
                   </button>
                 </Link>
+
+                <Link to={"/84930/84390"} className="px-2 sm:px-2">
+                  <button className="rounded-md bg-primary px-7 py-3 text-base font-medium dark:text-white dark:bg-blue-400 text-white hover:bg-primary/90">
+                    CV
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

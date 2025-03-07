@@ -1,10 +1,10 @@
 import React from "react";
-// import { motion } from 'framer-motion';
 React;
 import me from "../../assets/images/356202168_1515581109215839_7191836832866658358_n.jpg";
 import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { BiEnvelopeOpen } from "react-icons/bi";
 import { motion } from "framer-motion";
+import { FaFacebook } from "react-icons/fa6";
 const Hero = () => {
   return (
     <>
@@ -19,10 +19,10 @@ const Hero = () => {
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-5">
               Hello !! I am
-              <span className="block text-blue-300 font-bold flex items-center justify-center md:justify-start gap-2 my-3">
-                <span className="w-16 h-0.5 bg-white"></span> Mr Leon
-                <span className="w-16 h-0.5 bg-white"></span>
-              </span>
+              <b className="block text-blue-300 font-bold items-center justify-center md:justify-start gap-2 my-3">
+                <label className="w-16 h-0.5 bg-white"></label> Leon
+                <label className="w-16 h-0.5 bg-white"></label>
+              </b>
               Software Developer & Graphic Designer
             </h2>
             <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-5">
@@ -32,10 +32,19 @@ const Hero = () => {
             </p>
             <hr className="border-gray-500 mb-5" />
             <div className="flex justify-center md:justify-start space-x-4">
-              <BsGithub className="size-6" />
-              <BsWhatsapp className="size-6" />
-              <BiEnvelopeOpen className="size-6" />
-              <BsLinkedin className="size-6" />
+              <BsGithub className="size-6 w-20" />
+              <BsWhatsapp className="size-6 w-20" />
+              <BiEnvelopeOpen className="size-6 w-20" />
+              <BsLinkedin className="size-6 w-20" />
+              <FaFacebook className="size-6 w-20"/>
+            </div>
+            {/*  */}
+            <div className="flex pt-10 pb-8 gap-6 justify-center md:justify-start">
+              <button className="button p-4 text-white dark:bg-blue-400 dark:text-white">
+                Hire me
+              </button>
+              <button className="button button p-4 text-white dark:bg-blue-400 dark:text-white">Read about me </button>
+              <button className="button button p-4 text-white dark:bg-blue-400 dark:text-white">Download my CV</button>
             </div>
           </motion.div>
 
