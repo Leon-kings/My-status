@@ -9,6 +9,8 @@ import DownloadButton from "../../components/download/Download";
 import { Link } from "react-router-dom";
 import cv from '../../assets/docs/CV.pdf'
 const Hero = () => {
+  const pdfUrl = {cv}; // Replace with your actual PDF URL
+  const pdfFileName = "cv.pdf"; // Replace with your desired file name
   return (
     <>
       <div className="w-full text-white dark:bg-dark px-4 py-10">
@@ -53,10 +55,7 @@ const Hero = () => {
                   Read about me{" "}
                 </button>
               </Link>
-              <DownloadButton
-                fileUrl={cv}
-                fileName="CV"
-              />
+              <DownloadButton fileUrl={pdfUrl} fileName={pdfFileName} />
             </div>
           </motion.div>
 

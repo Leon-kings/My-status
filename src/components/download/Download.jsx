@@ -2,10 +2,13 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
-const DownloadButton = ({ fileUrl, fileName }) => {
+ const DownloadButton = ({ fileUrl, fileName }) => {
   const downloadFile = async () => {
     try {
       const response = await fetch(fileUrl);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const blob = await response.blob();
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
@@ -15,6 +18,7 @@ const DownloadButton = ({ fileUrl, fileName }) => {
       document.body.removeChild(link);
     } catch (error) {
       console.error("Download failed:", error);
+      alert("Download failed. Please check the console for details."); // Provide user feedback
     }
   };
 
@@ -27,5 +31,4 @@ const DownloadButton = ({ fileUrl, fileName }) => {
     </button>
   );
 };
-
-export default DownloadButton;
+export default DownloadButton

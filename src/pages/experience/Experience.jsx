@@ -45,9 +45,6 @@ export default function Experience() {
             <h5 className="inline-block text-primary uppercase border-b-4 border-primary">
               SKILLS
             </h5>
-            <h1 className="text-3xl lg:text-4xl font-bold mt-2">
-              Skills / Training Gathered
-            </h1>
           </div>
 
           {/* Service Cards Grid */}
