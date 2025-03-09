@@ -42,7 +42,7 @@ export default function Category() {
                   <div className="w-24 flex justify-center bg-indigo-50 text-indigo-500 rounded-md mb-5 md:mb-10">
                     <img
                       src={service.img}
-                      alt={service.title}
+                      alt=''
                       className="object-cover h-[4rem]"
                     />
                   </div>
