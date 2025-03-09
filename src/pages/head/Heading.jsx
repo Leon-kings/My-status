@@ -5,6 +5,7 @@ import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { BiEnvelopeOpen } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { FaFacebook } from "react-icons/fa6";
+import DownloadButton from "../../components/download/Download";
 const Hero = () => {
   return (
     <>
@@ -36,15 +37,17 @@ const Hero = () => {
               <BsWhatsapp className="size-6 w-20" />
               <BiEnvelopeOpen className="size-6 w-20" />
               <BsLinkedin className="size-6 w-20" />
-              <FaFacebook className="size-6 w-20"/>
+              <FaFacebook className="size-6 w-20" />
             </div>
             {/*  */}
             <div className="flex pt-10 pb-8 gap-6 justify-center md:justify-start">
               <button className="button p-4 text-white dark:bg-blue-400 dark:text-white">
                 Hire me
               </button>
-              <button className="button button p-4 text-white dark:bg-blue-400 dark:text-white">Read about me </button>
-              <button className="button button p-4 text-white dark:bg-blue-400 dark:text-white">Download my CV</button>
+              <button className="button button p-4 text-white dark:bg-blue-400 dark:text-white">
+                Read about me{" "}
+              </button>
+              <DownloadButton fileUrl="../../assets/docs/CV.pdf" fileName="CV.pdf" />
             </div>
           </motion.div>
 
