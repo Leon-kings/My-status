@@ -24,9 +24,16 @@ export default function Experience() {
 
     {
       title: "PROGRAMMING",
-      desc: "I also know more various programming languages like JAVA, JavaScript , PHP*( web development) , C++",
+      desc: "I also know more various programming languages like JAVA , C++",
       company: "GS Kigeme A",
       time: "From Jan 2020 To Aug 2022",
+    },
+
+    {
+      title: "PROGRAMMING",
+      desc: "I also know more various programming languages like JAVA, JavaScript , PHP*( web development)",
+      company: "KIAC [Kigali International Art College]",
+      time: "From Aug 2023 To March 2024",
     },
   ];
   return (
@@ -55,7 +62,7 @@ export default function Experience() {
                   {service.title}
                 </h4>
                 <p className="text-gray-600">{service.desc}</p>
-                <h2 className="text-center text-blue-300">{service.company}</h2>
+                <h2 className="text-center text-blue-300 font-bold">{service.company}</h2>
                 <p className="text-left text-black">{service.time}</p>
               </div>
             ))}
