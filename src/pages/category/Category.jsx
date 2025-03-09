@@ -24,7 +24,7 @@ export default function Category() {
               },
               {
                 title: "Back-End Development",
-                img: "https://nodejs.org/static/logos/nodejsStackedBlack.svg",
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToWzE17mxHt-cUVNazNGQhcGwzVCZFkR-QaQ&s",
                 desc: "Node.js is an open source server environment. Node.js allows you to run JavaScript on the server. Start learning Node.js now.",
               },
               {
@@ -43,7 +43,7 @@ export default function Category() {
                     <img
                       src={service.img}
                       alt={service.title}
-                      className="object-cover"
+                      className="object-cover h-[4rem]"
                     />
                   </div>
                 </div>
