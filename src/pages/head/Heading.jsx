@@ -6,6 +6,7 @@ import { BiEnvelopeOpen } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { FaFacebook } from "react-icons/fa6";
 import DownloadButton from "../../components/download/Download";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <>
@@ -41,13 +42,20 @@ const Hero = () => {
             </div>
             {/*  */}
             <div className="flex pt-10 pb-8 gap-6 justify-center md:justify-start">
-              <button className="button p-4 text-white dark:bg-blue-400 dark:text-white">
-                Hire me
-              </button>
-              <button className="button button p-4 text-white dark:bg-blue-400 dark:text-white">
-                Read about me{" "}
-              </button>
-              <DownloadButton fileUrl="../../assets/docs/CV.pdf" fileName="CV.pdf" />
+              <Link to={"/8340u20u"}>
+                <button className="button p-4 text-white dark:bg-blue-400 dark:text-white">
+                  Hire me
+                </button>
+              </Link>
+              <Link to={"/84940/9802"}>
+                <button className="button button p-4 text-white dark:bg-blue-400 dark:text-white">
+                  Read about me{" "}
+                </button>
+              </Link>
+              <DownloadButton
+                fileUrl="../../assets/docs/CV.pdf"
+                fileName="CV.pdf"
+              />
             </div>
           </motion.div>
 
