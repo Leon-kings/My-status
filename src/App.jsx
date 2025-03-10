@@ -9,6 +9,8 @@ import Message from "./pages/form/msg/Message";
 import Messsages from "./pages/form/message/Messages";
 import Footer from "./components/footer/Footer";
 import Experience from "./pages/experience/Experience";
+import About from "./pages/about/About";
+import Service from "./pages/services/Services";
 React;
 const App = () => {
   const [videoEnded, setVideoEnded] = useState(false);
@@ -36,6 +38,8 @@ const App = () => {
               <Navbar />
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/77930" element={<About />} />
+                <Route path="/7930" element={<Service />} />
                 <Route path="/84930/84390" element={<Message />} />
                 <Route path="/84930/84398" element={<Messsages />} />
                 <Route path="/7493097" element={<Services />} />

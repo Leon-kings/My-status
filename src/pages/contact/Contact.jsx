@@ -61,7 +61,7 @@ const Contact = () => {
   // return values
   return (
     <>
-      <section className="w-full relative dark:text-white text-white xl:w-full overflow-hidden bg-black">
+      <section className="w-full sm:w-full lg:w-full xl:w-full relative dark:text-white text-white overflow-hidden bg-black">
         {/* p-6 */}
         <div className="text-center text-white pt-4 pb-8">
           <h2 className="text-3xl font-bold leading-tight text-whitesm:text-4xl xl:text-5xl font-pj">
@@ -72,7 +72,7 @@ const Contact = () => {
             optimized for your applications.
           </p>
         </div>
-        <div className="w-full sm:w-full lg:w-full xl:w-full">
+        <div className="w-full">
           <div className="flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12 rounded shadow-md">
               <div className="mb-12 max-w-[570px] lg:mb-0">

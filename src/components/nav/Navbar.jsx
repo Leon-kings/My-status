@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../../assets/images/Black and Red Y2k Modern Professional Fashion Logo.png";
+import { Link } from "react-router-dom";
 React;
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,18 +43,18 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex space-x-4">
-          <button className="text-gray-300 hover:text-white">
-            Home
-          </button>
-          <button className="text-gray-300 hover:text-white">
-            About
-          </button>
-          <button className="text-gray-300 hover:text-white">
-            Services
-          </button>
-          <button className="text-gray-300 hover:text-white">
-            Contact
-          </button>
+          <Link to={"/"}>
+            <button className="text-gray-300 hover:text-white">Home</button>
+          </Link>
+          <Link to={"/84940/9802"}>
+            <button className="text-gray-300 hover:text-white">About</button>
+          </Link>
+          <Link to={"/7493097"}>
+            <button className="text-gray-300 hover:text-white">Services</button>
+          </Link>
+          <Link to={"/8340u20u"}>
+            <button className="text-gray-300 hover:text-white">Contact</button>
+          </Link>
         </div>
       </div>
 
@@ -67,18 +68,24 @@ const Navbar = () => {
             className="md:hidden mt-2"
           >
             <div className="flex flex-col space-y-2">
-              <button className="text-gray-300 hover:text-white">
-                Home
-              </button>
-              <button className="text-gray-300 hover:text-white">
-                About
-              </button>
-              <button className="text-gray-300 hover:text-white">
-                Services
-              </button>
-              <button className="text-gray-300 hover:text-white">
-                Contact
-              </button>
+              <Link to={"/"}>
+                <button className="text-gray-300 hover:text-white">Home</button>
+              </Link>
+              <Link to={"/84940/9802"}>
+                <button className="text-gray-300 hover:text-white">
+                  About
+                </button>
+              </Link>
+              <Link to={"/7493097"}>
+                <button className="text-gray-300 hover:text-white">
+                  Services
+                </button>
+              </Link>
+              <Link to={"/8340u20u"}>
+                <button className="text-gray-300 hover:text-white">
+                  Contact
+                </button>
+              </Link>
             </div>
           </motion.div>
         )}
