@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { FaFacebook } from "react-icons/fa6";
 import DownloadButton from "../../components/download/Download";
 import { Link } from "react-router-dom";
+import cv from '../../assets/docs/CV.pdf'
 const Hero = () => {
   return (
     <>
@@ -53,8 +54,8 @@ const Hero = () => {
                 </button>
               </Link>
               <DownloadButton
-                fileUrl="../../assets/docs/CV.pdf"
-                fileName="CV.pdf"
+                fileUrl={cv}
+                fileName="CV"
               />
             </div>
           </motion.div>
