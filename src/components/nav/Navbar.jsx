@@ -15,7 +15,9 @@ const Navbar = () => {
   return (
     <nav className="bg-black p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <img src={logo} alt="" className="w-18" />
+        <Link to={"/"}>
+          <img src={logo} alt="" className="w-18" />
+        </Link>
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}

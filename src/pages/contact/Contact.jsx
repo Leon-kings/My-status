@@ -73,9 +73,9 @@ const Contact = () => {
           </p>
         </div>
         <div className="w-full">
-          <div className="flex flex-wrap lg:justify-between">
-            <div className="w-full px-4 lg:w-1/2 xl:w-6/12 rounded shadow-md">
-              <div className="mb-12 max-w-[570px] lg:mb-0">
+          <div className="w-full grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:justify-between">
+            <div className="w-full px-4 rounded shadow-md">
+              <div className="mb-12 w-full lg:mb-0">
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
@@ -84,7 +84,7 @@ const Contact = () => {
                   includes input fields for essential information: name, email,
                   and phone number.
                 </p>
-                <div className="mb-8 flex w-full max-w-[370px]">
+                <div className="mb-8 flex w-full ">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
                     <svg
                       width="32"
@@ -176,7 +176,7 @@ const Contact = () => {
               </div>
             </div>
             {/* 2nd side form */}
-            <div className="w-full bg-amber-50 p-4 dark:text-white rounded-2xl sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-5/12">
+            <div className="w-full bg-amber-50 p-4 dark:text-white rounded-2xl ">
               <div className="w-full text-center items-center justify-center text-gray-800">
                 <div className="w-full p-6 bg-white rounded-lg shadow-2xl">
                   <div className="Messages w-full">
@@ -186,7 +186,7 @@ const Contact = () => {
                           MESSAGE ME
                         </h2>
                       </div>
-                      <div className="w-full justify-center space-y-4">
+                      <div className="w-full justify-items-center space-y-4">
                         {inputs.map((input) => (
                           <FormInput
                             key={input.id}
@@ -197,7 +197,7 @@ const Contact = () => {
                           />
                         ))}
                         <div className="text-center">
-                          <button className="btn w-full dark:bg-blue-400 md:w-44 bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 transition duration-300">
+                          <button className="btn w-full dark:bg-blue-400 md:w-44 lg:w-full bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 transition duration-300">
                             Send
                           </button>
                         </div>
