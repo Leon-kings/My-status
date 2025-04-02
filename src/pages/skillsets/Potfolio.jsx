@@ -6,11 +6,13 @@ import image2 from "../../assets/images/Screenshot2.png";
 import image3 from "../../assets/images/hospital-seven.png";
 import image5 from "../../assets/images/weather.png";
 import image6 from "../../assets/images/real-estate.png";
-import image7 from '../../assets/images/react-weather.png';
-import todo from '../../assets/images/todo.png';
+import image7 from "../../assets/images/react-weather.png";
+import todo from "../../assets/images/todo.png";
+import mediaplayer from '../../assets/images/Mediaplayer.png'
 import { Link } from "react-router-dom";
-import { motion } from 'framer-motion'; // Import motion from framer-motion
-React
+import { motion } from "framer-motion"; 
+// Import motion from framer-motion
+React;
 const Blog = () => {
   return (
     <motion.section
@@ -95,6 +97,13 @@ const Blog = () => {
             image={image7}
             link="https://react-weather-delta-fawn.vercel.app/"
           />
+          <BlogCard
+            CardTitle="REACT-MEDIA PLAYER"
+            CardDescription="React media player app is app developed to get access to check out weather of the your location ."
+            frameWork="React + Tailwinds + Material UI"
+            image={mediaplayer}
+            link="/"
+          />
         </div>
       </div>
     </motion.section>
@@ -128,7 +137,10 @@ const BlogCard = ({ image, CardTitle, link, CardDescription, frameWork }) => {
           <p className="text-base text-center text-body-color dark:text-dark-6">
             {CardDescription}
           </p>
-          <h2 className="text-center font-bold text-blue-400 dark:text-blue-500"> {frameWork}</h2>
+          <h2 className="text-center font-bold text-blue-400 dark:text-blue-500">
+            {" "}
+            {frameWork}
+          </h2>
         </div>
       </div>
     </motion.div>

@@ -48,8 +48,12 @@ const Contact = () => {
     e.preventDefault();
     console.log(values);
     try {
-      await axios.post("https://leon-portfolio-xm7a.onrender.com/0998C28", values);
+      const results = await axios.post("https://leon-portfolio-xm7a.onrender.com/api/messages", values);
+      if(results){
+        console.log('message sent!!')
+      }
       Navigate("/");
+
     } catch (err) {
       console.log(err);
     }
@@ -186,7 +190,7 @@ const Contact = () => {
                           MESSAGE ME
                         </h2>
                       </div>
-                      <div className="w-full justify-items-center space-y-4">
+                      <div className="w-full dark:text-black  space-y-4">
                         {inputs.map((input) => (
                           <FormInput
                             key={input.id}
