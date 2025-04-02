@@ -49,9 +49,15 @@ button {
   }
 
   button {
-    background-color: #5d52f1;
+    background-color: #0b0b0b;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif
+  }
+  button:hover{
+    background-color: aliceblue;
+    color: #000;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
   }
 }
 @import "tailwindcss";

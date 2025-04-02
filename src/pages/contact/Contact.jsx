@@ -201,7 +201,7 @@ const Contact = () => {
                           />
                         ))}
                         <div className="text-center">
-                          <button className="btn w-full dark:bg-blue-400 md:w-44 lg:w-full bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 transition duration-300">
+                          <button className="btn w-full dark:bg-blue-400 md:w-44 lg:w-[250px] bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 transition duration-300">
                             Send
                           </button>
                         </div>
