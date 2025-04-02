@@ -48,7 +48,7 @@ const Contact = () => {
     e.preventDefault();
     console.log(values);
     try {
-      const results = await axios.post("https://leon-portfolio-xm7a.onrender.com/api/messages", values);
+      const results = await axios.post("https://portfolio-7b9d.onrender.com/api/messages", values);
       if(results){
         console.log('message sent!!')
       }
